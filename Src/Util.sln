@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioFrequencyExplorer", "AudioFrequencyExplorer\AudioFrequencyExplorer.csproj", "{CBF78EFD-CE35-452E-B472-D397845C698A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AAV.Sys", "..\..\AAV.Shared\Src\Net6.0\AAV.Sys\AAV.Sys.csproj", "{99BFA7F9-00BB-4EC5-A3D8-D09DA09A1027}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AAV.WPF", "..\..\AAV.Shared\Src\Net6.0\AAV.WPF\AAV.WPF.csproj", "{F756BA88-ED0B-4CA2-919B-A9B8D1574811}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBF78EFD-CE35-452E-B472-D397845C698A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF78EFD-CE35-452E-B472-D397845C698A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF78EFD-CE35-452E-B472-D397845C698A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CBF78EFD-CE35-452E-B472-D397845C698A}.Debug|x64.Build.0 = Debug|Any CPU
+		{CBF78EFD-CE35-452E-B472-D397845C698A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CBF78EFD-CE35-452E-B472-D397845C698A}.Debug|x86.Build.0 = Debug|Any CPU
+		{CBF78EFD-CE35-452E-B472-D397845C698A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF78EFD-CE35-452E-B472-D397845C698A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBF78EFD-CE35-452E-B472-D397845C698A}.Release|x64.ActiveCfg = Release|Any CPU
+		{CBF78EFD-CE35-452E-B472-D397845C698A}.Release|x64.Build.0 = Release|Any CPU
+		{CBF78EFD-CE35-452E-B472-D397845C698A}.Release|x86.ActiveCfg = Release|Any CPU
+		{CBF78EFD-CE35-452E-B472-D397845C698A}.Release|x86.Build.0 = Release|Any CPU
+		{99BFA7F9-00BB-4EC5-A3D8-D09DA09A1027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99BFA7F9-00BB-4EC5-A3D8-D09DA09A1027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99BFA7F9-00BB-4EC5-A3D8-D09DA09A1027}.Debug|x64.ActiveCfg = Debug|x64
+		{99BFA7F9-00BB-4EC5-A3D8-D09DA09A1027}.Debug|x64.Build.0 = Debug|x64
+		{99BFA7F9-00BB-4EC5-A3D8-D09DA09A1027}.Debug|x86.ActiveCfg = Debug|x86
+		{99BFA7F9-00BB-4EC5-A3D8-D09DA09A1027}.Debug|x86.Build.0 = Debug|x86
+		{99BFA7F9-00BB-4EC5-A3D8-D09DA09A1027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99BFA7F9-00BB-4EC5-A3D8-D09DA09A1027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99BFA7F9-00BB-4EC5-A3D8-D09DA09A1027}.Release|x64.ActiveCfg = Release|x64
+		{99BFA7F9-00BB-4EC5-A3D8-D09DA09A1027}.Release|x64.Build.0 = Release|x64
+		{99BFA7F9-00BB-4EC5-A3D8-D09DA09A1027}.Release|x86.ActiveCfg = Release|x86
+		{99BFA7F9-00BB-4EC5-A3D8-D09DA09A1027}.Release|x86.Build.0 = Release|x86
+		{F756BA88-ED0B-4CA2-919B-A9B8D1574811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F756BA88-ED0B-4CA2-919B-A9B8D1574811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F756BA88-ED0B-4CA2-919B-A9B8D1574811}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F756BA88-ED0B-4CA2-919B-A9B8D1574811}.Debug|x64.Build.0 = Debug|Any CPU
+		{F756BA88-ED0B-4CA2-919B-A9B8D1574811}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F756BA88-ED0B-4CA2-919B-A9B8D1574811}.Debug|x86.Build.0 = Debug|Any CPU
+		{F756BA88-ED0B-4CA2-919B-A9B8D1574811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F756BA88-ED0B-4CA2-919B-A9B8D1574811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F756BA88-ED0B-4CA2-919B-A9B8D1574811}.Release|x64.ActiveCfg = Release|Any CPU
+		{F756BA88-ED0B-4CA2-919B-A9B8D1574811}.Release|x64.Build.0 = Release|Any CPU
+		{F756BA88-ED0B-4CA2-919B-A9B8D1574811}.Release|x86.ActiveCfg = Release|Any CPU
+		{F756BA88-ED0B-4CA2-919B-A9B8D1574811}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7271D97C-3638-4CB1-8CDA-C02F4AEAA2C1}
+	EndGlobalSection
+EndGlobal
