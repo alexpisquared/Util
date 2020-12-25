@@ -1,19 +1,7 @@
-﻿using AAV.Sys.Helpers;
-using AAV.WPF.AltBpr;
+﻿using AAV.WPF.AltBpr;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace AudioFrequencyExplorer
 {
@@ -22,22 +10,15 @@ namespace AudioFrequencyExplorer
   /// </summary>
   public partial class MainWindow : Window
   {
-    public MainWindow()
-    {
-      InitializeComponent();
-      //Loaded += async (s, e) => await play();
-    }
+    public MainWindow() => InitializeComponent();//Loaded += async (s, e) => await play();
 
     void onFreq(object s, RoutedPropertyChangedEventArgs<double> e)
     {
       tbxFreq.Text = $" {freq(e.NewValue):N0} Hz ";
       tbxWLen.Text = $" {wavelength(e.NewValue).ToString().Substring(0, 4)} m ";
     }
-
     void onDurn(object s, RoutedPropertyChangedEventArgs<double> e) => tbxDurn.Text = $" {e.NewValue:N0} ms ";
-
-    async void onPlay(object sender, RoutedEventArgs e) => await play();
-
+    async void onPlay(object s, RoutedEventArgs e) => await play();
 
     void onClose(object sender, RoutedEventArgs e) => Close();
     void chkIsAuto_Checked(object s, RoutedEventArgs e) { }
@@ -56,7 +37,5 @@ namespace AudioFrequencyExplorer
       }
       catch (Exception ex) { tbxEx.Text = ex.Message; }
     }
-
-
   }
 }

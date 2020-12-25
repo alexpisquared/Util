@@ -1,4 +1,4 @@
-﻿<Window x:Class="AudioFrequencyExplorer.MainWindow"
+﻿<Window x:Class="AudioFrequencyExplorer.MainWindow" 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -32,11 +32,10 @@
         <TextBlock x:Name="tbxDurn" Margin="10" Text="20,000 ms" FontSize="22" Background="#cfff" Foreground="#080" />
       </StackPanel>
 
-      <Slider x:Name="slrFreq" Grid.Column="1" Margin="6" Grid.Row="2" Minimum="0"   Maximum="15"   Value="10"  TickFrequency="1"   TickPlacement="TopLeft" ValueChanged="onFreq" Foreground="#00e" />
+      <Slider x:Name="slrFreq" Grid.Column="1" Margin="6" Grid.Row="2" Minimum="4"   Maximum="15"   Value="10"  TickFrequency="1"   TickPlacement="TopLeft" ValueChanged="onFreq" Foreground="#00e" />
       <Slider x:Name="slrDurn" Grid.Column="1" Margin="6" Grid.Row="4" Minimum="100" Maximum="2000" Value="200" TickFrequency="100" TickPlacement="TopLeft" ValueChanged="onDurn" Foreground="#080" />
 
       <StackPanel Grid.Row="6" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
-        <CheckBox x:Name="chkIsKern" Content="_Kernel" Margin="30 10" Checked="chkIsAuto_Checked" IsChecked="True"/>
         <CheckBox x:Name="chkIsAuto" Content="_Repeat" Margin="30 10" Checked="chkIsAuto_Checked" IsChecked="True"/>
         <Button x:Name="button" Content="Play" Margin="10" IsDefault="True" Click="onPlay"  Width="60"/>
         <Button x:Name="butto2" Content="Close" Margin="10" IsCancel="True" Click="onClose" Width="60"/>
