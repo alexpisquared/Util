@@ -12,13 +12,19 @@ namespace AudioFrequencyExplorer
   {
     public MainWindow()
     {
-      InitializeComponent();//Loaded += async (s, e) => await play();
-      Task.Run(async () =>
+      InitializeComponent();
+      Loaded += async (s, e) => 
       {
         await ChimerAlt.PlayFreqList();
-        await ChimerAlt.FreqWalkDn();
-      });
+      };
     }
+
+    async void on0(object s, RoutedEventArgs e) => await ChimerAlt.PlayFreqList();
+    async void on1(object s, RoutedEventArgs e) => await ChimerAlt.FreqWalkUp();
+    async void on2(object s, RoutedEventArgs e) => await ChimerAlt.FreqWalkDn();
+    async void on3(object s, RoutedEventArgs e) => await ChimerAlt.FreqRunUpDn();
+    async void on4(object s, RoutedEventArgs e) => await ChimerAlt.WakeAudio();
+    async void on5(object s, RoutedEventArgs e) => await ChimerAlt.NoteWalk();
 
     void onFreq(object s, RoutedPropertyChangedEventArgs<double> e)
     {
