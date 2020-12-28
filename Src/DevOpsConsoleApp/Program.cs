@@ -9,9 +9,10 @@ static async Task M() { do { await t1(); } while (Console.ReadKey().Key != Conso
 
 static async Task t1()
 {
-  var freqs = new[] { 1000, 5000, 3000, 10000, 300, 50 };
+  var freqs = new[] { 2000, 7000, 3000, 9000 };
+  //var freqs = new[] { 1000, 5000, 3000, 10000, 300, 50 };
   //var freqs = new[] { 40, 10000 };
-  var durtn = .333;
+  var durtn = .1333;
   await ChimerAlt.PflO(freqs, durtn);
   await ChimerAlt.PflN(freqs, durtn);
 }
