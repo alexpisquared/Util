@@ -7,21 +7,22 @@ await M();
 
 static async Task M() { do { await t1(); } while (Console.ReadKey().Key != ConsoleKey.Escape); }
 
+static async Task t3() { await ChimerAlt.FreqWalkUp(); }
+
 static async Task t1()
 {
   var freqs = new[] { 2000, 7000, 3000, 9000 };
   //var freqs = new[] { 1000, 5000, 3000, 10000, 300, 50 };
-  //var freqs = new[] { 40, 10000 };
-  var durtn = .1333;
-  await ChimerAlt.PflO(freqs, durtn);
-  await ChimerAlt.PflN(freqs, durtn);
+  //var freqs = new[] { 20, 20000 };
+  var durtn = .17;
+  await ChimerAlt.Pfl(freqs, durtn);
+  await ChimerAlt.pfL(freqs, durtn);
 }
 
-static async Task t2()
+static  void t2()
 {
-
   var freqDurnList = new List<int[]>();
-  ChimerAlt.addSteps(20, 20 * 16, freqDurnList, .200);
+  ChimerAlt.addStrng(20, 20 * 16, freqDurnList, .200);
 
   connectTheDots(20, 20 * 16, freqDurnList, .200);
   //connectTheDots(20 * 16, 20, freqDurnList, .200);
