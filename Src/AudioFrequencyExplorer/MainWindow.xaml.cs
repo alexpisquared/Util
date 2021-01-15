@@ -15,11 +15,11 @@ namespace AudioFrequencyExplorer
       InitializeComponent();
       Loaded += async (s, e) => 
       {
-        await ChimerAlt.PlayFreqList();
+        await ChimerAlt.PlayWhistle(ushort.MaxValue);
       };
     }
 
-    async void on0(object s, RoutedEventArgs e) => await ChimerAlt.PlayFreqList();
+    async void on0(object s, RoutedEventArgs e) => await ChimerAlt.PlayWhistle();
     async void on1(object s, RoutedEventArgs e) => await ChimerAlt.FreqWalkUp();
     async void on2(object s, RoutedEventArgs e) => await ChimerAlt.FreqWalkDn();
     async void on3(object s, RoutedEventArgs e) => await ChimerAlt.FreqRunUpDn();
