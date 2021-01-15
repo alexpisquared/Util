@@ -26,10 +26,11 @@ namespace TTS.Net48
           foreach (var voice in instVoices)
           {
             Debug.WriteLine(voice.VoiceInfo.Name);
+            synth.Volume = 50;
             synth.Speak(voice.VoiceInfo.Name);
           }
         }
-
+        synth.Volume = 100;
         synth.Speak(nts);
       }
       catch (Exception ex) { Debug.WriteLine($"\r\n\nExeption in {ex.Source}:\r\n {ex.Message}\n\n\n"); throw; }
