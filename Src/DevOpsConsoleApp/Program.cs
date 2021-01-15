@@ -38,7 +38,7 @@ static void connectTheDots(double freqA, double freqB, List<int[]> freqDurnList,
   var stepMultiplier = Math.Pow(freqB / freqA, 1.0 / stepsTtlCnt);
   var freq = freqA;
 
-  for (int i = 0; i <= stepsTtlCnt; i++)
+  for (var i = 0; i <= stepsTtlCnt; i++)
   {
     Console.Write($"  {1 + i,4}.  Playing {freq,14:N1} hz  for {stepDurnSec} sec \n");
     freq *= stepMultiplier;
