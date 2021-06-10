@@ -45,7 +45,7 @@ class Program
 
       Wcl(ConsoleColor.DarkYellow, "\r\n\n\n\tPress any key to continue ...\r\n\n\t\t...or any other key to quit >\r\n\n");
 
-      File.AppendAllText("DotNetVersion.log", $"{DateTimeOffset.Now:y-MM-dd HH:mm} \t {Environment.MachineName} \t {xArcGageWpfApp.GetDotNetVersion.Get1()} ");
+      File.AppendAllText("DotNetVersion.log", $"{DateTimeOffset.Now:y-MM-dd HH:mm} \t {Environment.MachineName} \t {xArcGageWpfApp.GetDotNetVersion.Get1()} \r\n");
     }
     catch (Exception ex) { Wcl(ConsoleColor.Red, ex.Message); }
     Console.ReadKey(true); // System.Threading.Thread.Sleep(2500);
