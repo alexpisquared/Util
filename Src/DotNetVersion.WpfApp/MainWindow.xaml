@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DotNetVersionChecker_WpfApp4._0"
         mc:Ignorable="d"
-        Title="DotNetVersionChecker - WpfApp (built on .NET 4.0)" Height="350" Width="525" Loaded="Window_Loaded">
-  <Viewbox Margin="50" >
+        Title="DotNetVersionChecker - WpfApp (built on .NET 4.0)" Height="250" Width="1200" Loaded="onLoaded" WindowStartupLocation="CenterScreen">
+  <Viewbox Margin="20" >
     <TextBlock Text="Loading...."  Name="tb1" Foreground="#00f" />
   </Viewbox>
 </Window>

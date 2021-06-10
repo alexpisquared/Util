@@ -57,7 +57,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="..\..\..\..\..\..\..\c\Live\TIA\xArcGageWpfApp\DotNetVersion.cs">
+    <Compile Include="..\DotNetVersion.ConsoleApp\DotNetVersion.cs">
       <Link>DotNetVersion.cs</Link>
     </Compile>
     <Compile Include="App.xaml.cs">
