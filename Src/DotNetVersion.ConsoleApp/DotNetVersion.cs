@@ -36,7 +36,7 @@ namespace xArcGageWpfApp
       {
         var releaseKey = (int)ndpKey.GetValue("Release");
         if (ndpKey?.GetValue("Release") != null)
-          return $"Ver: {ndpKey.GetValue("Version")}  +  Release Key: {releaseKey:N0}  ►  {CheckFor45PlusVersion(releaseKey)}";
+          return $"{ndpKey.GetValue("Version")}  +  Release Key: {releaseKey:N0}  ►  {CheckFor45PlusVersion(releaseKey)}";
         else
           return null; // (".NET Framework Version 4.5 or later is not detected.");
       }
@@ -44,49 +44,18 @@ namespace xArcGageWpfApp
 
     static string CheckFor45PlusVersion(int releaseKey)
     {
-      if (releaseKey >= 528040)
-        return "4.8 or later";
-      if (releaseKey >= 461808)
-        return "4.7.2";
-      if (releaseKey >= 461308)
-        return "4.7.1";
-      if (releaseKey >= 460798)
-        return "4.7";
-      if (releaseKey >= 394802)
-        return "4.6.2";
-      if (releaseKey >= 394254)
-        return "4.6.1";
-      if (releaseKey >= 393295)
-        return "4.6";
-      if (releaseKey >= 379893)
-        return "4.5.2";
-      if (releaseKey >= 378675)
-        return "4.5.1";
-      if (releaseKey >= 378389)
-        return "4.5";
-      // This code should never execute. A non-null release key should mean
-      // that 4.5 or later is installed.
-      return "No 4.5 or later version detected";
+      if (releaseKey >= 528040) return "4.8 or later";
+      if (releaseKey >= 461808) return "4.7.2";
+      if (releaseKey >= 461308) return "4.7.1";
+      if (releaseKey >= 460798) return "4.7";
+      if (releaseKey >= 394802) return "4.6.2";
+      if (releaseKey >= 394254) return "4.6.1";
+      if (releaseKey >= 393295) return "4.6";
+      if (releaseKey >= 379893) return "4.5.2";
+      if (releaseKey >= 378675) return "4.5.1";
+      if (releaseKey >= 378389) return "4.5";
+      return "No 4.5 or later version detected"; // This code should never execute. A non-null release key should mean that 4.5 or later is installed.
     }
-
-    static string checkFor45PlusVersion(int releaseKey, string ver)
-    {
-      var d =
-          releaseKey > 0461814 ? "Later than 4.7.2" :
-          releaseKey >= 461814 ? "4.7.2" :
-          releaseKey >= 461308 ? "4.7.1" :
-          releaseKey >= 460798 ? "4.7" :
-          releaseKey >= 394802 ? "4.6.2" :
-          releaseKey >= 394254 ? "4.6.1" :
-          releaseKey >= 393295 ? "4.6" :
-          releaseKey >= 379893 ? "4.5.2" :
-          releaseKey >= 378675 ? "4.5.1" :
-          releaseKey >= 378389 ? "4.5" : "No 4.5 or later version detected"; // This code should never execute. A non-null release key should mean that 4.5 or later is installed.
-
-      return $"Ver: {ver}  +  Release Key: {releaseKey:N0}  ==>  {d}";
-    }
-    ///May 1st:  Ver: 4.7.02556  +  Release Key: 461,308  ==>  4.7.1
-    ///May 2nd:  Ver: 4.7.03062  +  Release Key: 461,814  ==>  4.7.2
 
     public static string GetPre_45VersionFromRegistry()
     {
